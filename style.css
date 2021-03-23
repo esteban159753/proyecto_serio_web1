@@ -7,9 +7,17 @@ body{
     
     
 }
+.logo{
+    margin: 0;
+    position: fixed;
+    z-index: 600;
+    top: 8px;
+    left: 8px;
+    display: none;
+}
 .container-max{
-/*     max-width: 1024px;
-    margin: auto; */
+ /*  max-width: 1024px; */
+    margin: auto auto; 
 }
 
 .encabezado, .contenido, .contenido_izquierda, .pie_de_pagina{
@@ -18,13 +26,14 @@ body{
 /* .container{
     margin: 0 20px;
     max-width: 1024px; */
-    /* background-color: #edeef7; */
-}
+    /* background-color: #edeef7; 
+}*/
                      /* esto es el header */
 .wraper_header{
     position: sticky;
     top:0;
     z-index: 200;
+    
     
 }
 .encabezado{
@@ -34,6 +43,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 /* tipo de fuente:
@@ -137,6 +147,7 @@ li a{
      align-items: center;
      color: white;
      font-size: 1.2rem;
+     text-align: center;
 
  }
 .contenido{ 
@@ -209,28 +220,26 @@ li a{
 
 .contenido_izquierda-2{
     height:292.5px ;
-    width: 19%; 
+    width: 18%; 
     background-color: #f6dfeb;
     float: left;
     margin-top: 7.6px;
     margin-bottom: 7.6px;
-}
+    margin-left:12px ;
+} 
+
 
                          /*   pie de pagina */
 
 
-.pie_de_pagina{
-    margin-top: 7.6px;
-    height: 200px;
-    background-color: #1687a7;
-    clear: both;
-}
+
 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
+    
 }
 form h2{
     text-align: center;
@@ -243,4 +252,154 @@ form h2{
     display: flex;
     justify-content:center;
     align-items: center; 
+}
+form div{
+    display: flex;
+    justify-content: center;
+}
+.aside-barra{
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    
+}
+.pie_de_pagina{
+    height: 200px;
+    margin-top: 5.6px;
+    background-color: black;
+}
+figure{
+    width: 99%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+figure img{
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width:330px){
+    /* body{
+        background-color: rgb(20, 18, 14);
+    } */
+  .encabezado{
+      height: auto;
+      display: block
+      
+  }
+  h1{
+    display: flex;
+    
+  }
+  h1 img{
+      width: 200px;
+      margin: auto;
+      
+  }
+ ul{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ li{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+
+ }
+ li .bara{
+     margin-left: 20px|;
+ }
+ li  a{
+     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px;
+ }
+ .header_enlace{
+     display: flex;
+     justify-content: center;
+ }
+ .portada{
+    margin: 4px;
+    height: auto;
+ }
+ .portada .uno{
+    float: none;
+    display: block;
+    width: 100%;
+    height: 150px
+ }
+.portada .dos{
+    width: 100%;
+    height: 150px;
+    margin-top: 2px;
+}
+.contenidos{
+    margin: 0px 0px;
+    height: auto;
+}
+.contenido{
+    float: none;
+    margin: auto;
+    height: auto;
+    width: 97%;
+    margin: 4px;
+    
+}
+.contenido_video{
+    display: block;
+}
+.contenido_video .video{
+    width: 100%;
+    margin: 2px;
+}
+.contenido_izquierda-2{
+    float: none;
+    margin: 0px 4px;
+    width: 100%;
+
+}
+form{
+    margin: auto;    
+}
+.contenido_izquierda{
+    position: fixed;
+    z-index: 700;
+    top: 0;
+    bottom: 0px;
+    background: rgba(217, 218, 216, 0.747);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* position: fixed;
+    z-index: 300;
+    background-color: rgba(0, 0, 0, 0.438);
+    top: 0;
+    left: -100vw;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s; */
+}
+
+[class^="caja"]{
+    width: 200px;
+    height: 35px;
+    
+}
+.logo{
+    display: block;
 }
